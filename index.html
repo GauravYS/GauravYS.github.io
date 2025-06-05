@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaurav Shinde Webpage</title>
+    <style>
+      /* Entire page: white background, black text */
+      body {
+        background: #ffffff;
+        color: #000000;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+
+      /* Header area */
+      .header {
+        text-align: center;
+        padding: 20px 20px;
+        background: #ffffff;
+      }
+      .header img {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border: 2px solid #cccccc;
+        margin-bottom: 15px;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 2.5rem; /* larger than other text */
+        color: #000000;
+      }
+      .header .affiliation {
+        margin: 5px 0;
+        font-size: 1.2rem;
+        color: #000000;
+      }
+      .header .affiliation .lab {
+        color: #ff6600; /* orange for lab name */
+      }
+      .header .email {
+        margin: 5px 0;
+        font-size: 1.2rem;
+        color: #000000;
+      }
+      .header .links {
+        margin-top: 10px;
+      }
+      .header .links a {
+        margin: 0 12px;
+        font-size: 1.2rem;
+        color: #0066cc; /* blue */
+        text-decoration: none;
+      }
+      .header .links a:hover {
+        text-decoration: underline;
+      }
+
+      /* Section containers with reduced vertical spacing */
+      .section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 15px 20px; /* smaller padding to reduce gaps */
+        background: #ffffff;
+      }
+      .section + .section {
+        border-top: 1px solid #e0e0e0; /* subtle divider */
+      }
+      .section h2 {
+        margin-bottom: 8px;
+        font-size: 1.5rem;
+        color: #000000;
+        border-bottom: 1px solid #cccccc;
+        padding-bottom: 4px;
+      }
+      .section p {
+        margin-bottom: 0.75rem;
+        font-size: 1.2rem;
+        color: #000000;
+      }
+      .section ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      .section ul li {
+        margin-bottom: 8px;
+        font-size: 1.2rem;
+        color: #000000;
+      }
+      /* Description lines appear indented and in a slightly smaller font */
+      .section ul li .description {
+        display: block;
+        margin-left: 20px; /* indent */
+        font-size: 1.1rem;
+        color: #333333;
+      }
+      /* Label “Contribution:” in bold before description */
+      .section ul li .description .label {
+        font-weight: bold;
+        margin-right: 5px;
+        color: #ff6600; /* orange for label */
+      }
+
+      /* Selected Publications section */
+      .pub-item {
+        display: grid;
+        grid-template-columns: 100px 1fr 30px;
+        gap: 10px;
+        align-items: start;
+        padding: 15px 0;
+        /* Removed border-bottom to eliminate dividing line */
+      }
+      .pub-date {
+        font-size: 1rem;
+        color: #0066cc; /* publication venue in blue */
+        font-weight: bold;
+        flex-shrink: 0;
+      }
+      .pub-content {
+        display: flex;
+        flex-direction: column;
+      }
+      .pub-title {
+        font-size: 1.15rem;
+        font-style: italic;
+        color: #000000;
+        margin: 0 0 5px 0;
+        white-space: normal; /* allow wrapping */
+      }
+      .authors {
+        font-size: 0.95rem;
+        color: #333333;
+        margin: 0;
+      }
+      .pub-icons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .pub-icons a {
+        font-size: 1.4rem; /* larger file emoji */
+        color: #0066cc; /* blue */
+        text-decoration: none;
+      }
+      .pub-icons a:hover {
+        color: #004999; /* darker blue on hover */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <img src="ProfilePhoto.jpg" alt="Profile Photo" />
+
+      <!-- Name -->
+      <h1>Gaurav Shinde</h1>
+
+      <!-- Affiliation with orange lab text -->
+      <p class="affiliation">
+        PhD Student &rarr;
+        <span class="lab">Mobile, Pervasive &amp; Sensor Computing Lab</span>
+      </p>
+
+      <!-- Email -->
+      <p class="email">Email: gshinde1@umbc.edu</p>
+
+      <!-- Clickable links in blue -->
+      <div class="links">
+        <a
+          href="https://scholar.google.com/citations?user=ilxxx9EAAAAJ&hl=en"
+          target="_blank"
+          >Google Scholar</a
+        >
+        <a href="https://github.com/GauravYS" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/gauravshinde19/" target="_blank"
+          >LinkedIn</a
+        >
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="section" id="about">
+      <h2>About</h2>
+      <p>
+        I am a PhD researcher at the MPSC Lab under
+        <a
+          href="https://scholar.google.com/citations?user=6KQI1ekAAAAJ&hl=en"
+          target="_blank"
+          >Nirmalya Roy</a
+        >
+        and
+        <a
+          href="https://scholar.google.co.in/citations?user=HOB7lKEAAAAJ&hl=en"
+          target="_blank"
+          >Anuradha Ravi</a
+        >. My research interests lie in distributed task execution and
+        decision‐making for autonomous agents in contested environments.
+        Previously, I worked as a Research Assistant at MiCoSys Lab with
+        <a
+          href="https://scholar.google.com/citations?user=k2VqXlUAAAAJ&hl=en"
+          target="_blank"
+          >Saptarshi Sengupta</a
+        >, where I developed deep learning techniques to predict the remaining
+        useful life of Li-ion batteries.
+      </p>
+    </div>
+
+    <!-- News Section -->
+    <div class="section" id="news">
+      <h2>News</h2>
+      <ul>
+        <li>
+          <strong>04/2025</strong> – Paper submitted to WIREs Data Mining and
+          Knowledge Discovery. (<u>IF 6.4</u>)
+        </li>
+        <li>
+          <strong>04/2025</strong> – Paper accepted at IEEE SmartComp’25.
+          <span class="description">
+            <span class="label">Contribution:</span> Respiratory Signal
+            Reconstruction &amp; Prediction using contactless sensing
+          </span>
+        </li>
+        <li>
+          <strong>04/2025</strong> – Paper accepted at IEEE DCOSS-IoT’25.
+          <span class="description">
+            <span class="label">Contribution:</span> Multimodal Cooperative
+            Perception &amp; Task Execution for Distributed Systems
+          </span>
+        </li>
+        <li>
+          <strong>03/2025</strong> – Awarded NSF Travel Grant for PerCom’25.
+        </li>
+        <li>
+          <strong>01/2025</strong> – Paper accepted at PerCom ’25. (<u
+            >17% Acceptance</u
+          >)
+          <span class="description">
+            <span class="label">Contribution:</span> Task &amp; Channel-Aware
+            Variable Rate Image Compression for Distributed Autonomous Systems
+          </span>
+        </li>
+        <li>
+          <strong>08/2024</strong> – Joined University of Maryland, Baltimore
+          County as a PhD Researcher.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Selected Publications Section -->
+    <div class="section" id="publications">
+      <h2>Selected Publications</h2>
+
+      <!-- Publication 1 -->
+      <div class="pub-item">
+        <div class="pub-date">Under Review</div>
+        <div class="pub-content">
+          <div class="pub-title">
+            <em>A Survey on Efficient Vision Language Models</em>
+          </div>
+          <div class="authors">
+            <strong>Gaurav Shinde</strong>, Anuradha Ravi, Emon Dey, Shadman
+            Sakib, Milind Rampure, Nirmalya Roy
+          </div>
+        </div>
+        <div class="pub-icons">
+          <a
+            href="https://arxiv.org/pdf/2504.09724"
+            title="Download PDF"
+            target="_blank"
+            >🔗</a
+          >
+        </div>
+      </div>
+
+      <!-- Publication 2 -->
+      <div class="pub-item">
+        <div class="pub-date">PerCom'25</div>
+        <div class="pub-content">
+          <div class="pub-title">
+            <em
+              >TAVIC-DAS: Task and Channel-Aware Variable-Rate Image Compression
+              for Distributed Autonomous System</em
+            >
+          </div>
+          <div class="authors">
+            <strong>Gaurav Shinde</strong>, Anuradha Ravi, Emon Dey, Jared
+            Lewis, Nirmalya Roy
+          </div>
+        </div>
+        <div class="pub-icons">
+          <a
+            href="https://drive.google.com/file/d/1rWxujNalDGmlA_ZE7K2c8U64efEo-hLI/view"
+            title="Download PDF"
+            target="_blank"
+            >🔗</a
+          >
+        </div>
+      </div>
+
+      <!-- Publication 3 -->
+      <div class="pub-item">
+        <div class="pub-date">BigData'23</div>
+        <div class="pub-content">
+          <div class="pub-title">
+            <em
+              >De-SaTE: Denoising Self-attention Transformer Encoders for Li-ion
+              Battery Health Prognostics</em
+            >
+          </div>
+          <div class="authors">
+            <strong>Gaurav Shinde</strong>, Rohan Mohapatra, Pooja Krishan,
+            Saptarshi Sengupta
+          </div>
+        </div>
+        <div class="pub-icons">
+          <a
+            href="https://arxiv.org/pdf/2310.00023"
+            title="Download PDF"
+            target="_blank"
+            >🔗</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
