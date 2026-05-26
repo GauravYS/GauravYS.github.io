@@ -560,6 +560,89 @@
               >
                 <tbody>
 
+
+                  <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+                    <td
+                      style="padding: 20px; width: 25%; vertical-align: middle"
+                    >
+                      <div class="one">
+                        <div class="two" id="autoeval-image">
+                          <img
+                            src="images/CAVIAR.png"
+                            width="160"
+                            height="160"
+                          />
+                        </div>
+                        <img
+                          src="images/CAVIAR.png"
+                          width="160"
+                          height="160"
+                        />
+                      </div>
+                      <script type="text/javascript">
+                        function malle_start() {
+                          document.getElementById(
+                            "multiprompt-image"
+                          ).style.opacity = "1";
+                        }
+
+                        function malle_stop() {
+                          document.getElementById(
+                            "multiprompt-image"
+                          ).style.opacity = "0";
+                        }
+                        malle_stop();
+                      </script>
+                    </td>
+                    <td
+                      style="padding: 20px; width: 75%; vertical-align: middle"
+                    >
+                        <papertitle
+                          >CAViAR: Quality-Aware Vision-and-Radio Fusion for
+                          Relative Range Estimation among Collaborative Autonomous Agents</papertitle
+                        >
+                      </a>
+                      <br />
+                      <strong>Gaurav Shinde</strong>,
+                      Anuradha Ravi, Jared Lewis, Andre Harrison, Henry Gardiner, MS Anwar, Shadman Sakib, Jade Freeman, Nirmalya Roy
+                      <br />
+                      <em>IEEE WoWMoM</em>, 2026
+                      <br />
+                      <a href="https://drive.google.com/file/d/1obSFIfHWuCGQIBqQ90473JyKO-b7WW9Y/view?usp=sharing">paper</a>
+                      <p></p>
+                      <p>
+                        In mission-critical scenarios, autonomous agents often
+operate in GPS-denied or GPS-degraded environments, making it chal-
+lenging to localize agents relative to themselves and objects of interest
+(e.g., potential cover) or adversarial robots. While vision- and radio-
+based modalities have individually been used to estimate relative ranges
+between agents and surrounding objects, each modality suffers from in-
+herent limitations. Vision-based range estimation degrades significantly
+under low image overlap, partial visibility, or when an agent is too close
+to an object, resulting in effective zoom-in and loss of geometric context.
+Conversely, radio-based ranging is susceptible to multipath interference,
+signal fading, and environmental variability, which can substantially
+reduce range accuracy and reliability. To address these challenges, we
+introduce CAViAR, a quality-aware multimodal fusion framework for ac-
+curate relative range estimation among collaborative autonomous agents.
+CAViAR assigns modality-specific reliability scores and performs sta-
+tistical fusion to adaptively weigh vision and radio inputs based on their
+estimated quality. The framework employs modality-specific quality
+estimators augmented with temporal features and integrates MBConv
+blocks to enable efficient feature processing on resource-constrained
+robotic platforms. We validate CAViAR on ROSbot 2 and ROSbot 2
+Pro platforms using an in-house dataset collected across diverse indoor
+and outdoor environments. Experimental results demonstrate that
+our approach outperforms single-modality baselines by approximately
+21% over vision-only and 36% over radio-only range estimates.
+Moreover, CAViAR adapts robustly to variations in scene structure,
+viewpoint overlap, and occlusions without requiring fine-tuning on new
+environments, highlighting its practicality for real-world deployment.
+                      </p>
+                      <br />
+                    </td>
+                  </tr>
+
                   <tr onmouseout="malle_stop()" onmouseover="malle_start()">
                     <td
                       style="padding: 20px; width: 25%; vertical-align: middle"
