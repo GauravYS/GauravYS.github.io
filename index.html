@@ -189,6 +189,40 @@
                                 border-right: 1px solid #c6c6c6;
                               "
                             >
+                              May&nbsp;2026
+                            </td>
+                            <td style="padding-left: 12px; padding-bottom: 6px">
+                              Reviewer for WIREs DMKD and IEEE TMC.
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td
+                              style="
+                                color: #bb4960;
+                                font-weight: bold;
+                                white-space: nowrap;
+                                padding: 0 12px 6px 0;
+                                border-right: 1px solid #c6c6c6;
+                              "
+                            >
+                              Apr&nbsp;2026
+                            </td>
+                            <td style="padding-left: 12px; padding-bottom: 6px">
+                              Organized NSF TRACE Robotic Testbed Workshop.
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td
+                              style="
+                                color: #bb4960;
+                                font-weight: bold;
+                                white-space: nowrap;
+                                padding: 0 12px 6px 0;
+                                border-right: 1px solid #c6c6c6;
+                              "
+                            >
                               Apr&nbsp;2026
                             </td>
                             <td style="padding-left: 12px; padding-bottom: 6px">
@@ -525,6 +559,86 @@
                 "
               >
                 <tbody>
+
+                  <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+                    <td
+                      style="padding: 20px; width: 25%; vertical-align: middle"
+                    >
+                      <div class="one">
+                        <div class="two" id="autoeval-image">
+                          <img
+                            src="images/COHORT.png"
+                            width="160"
+                            height="160"
+                          />
+                        </div>
+                        <img
+                          src="images/COHORT.png"
+                          width="160"
+                          height="160"
+                        />
+                      </div>
+                      <script type="text/javascript">
+                        function malle_start() {
+                          document.getElementById(
+                            "multiprompt-image"
+                          ).style.opacity = "1";
+                        }
+
+                        function malle_stop() {
+                          document.getElementById(
+                            "multiprompt-image"
+                          ).style.opacity = "0";
+                        }
+                        malle_stop();
+                      </script>
+                    </td>
+                    <td
+                      style="padding: 20px; width: 75%; vertical-align: middle"
+                    >
+                        <papertitle
+                          >COHORT: Hybrid RL for Collaborative Large DNN
+                          Inference on Multi-Robot Systems Under Real-Time
+                          Constraints</papertitle
+                        >
+                      </a>
+                      <br />
+                      MS Anwar, Anuradha Ravi, Indrajeet Ghosh
+                      <strong>Gaurav Shinde</strong>,
+                      Carl Busart, Nirmalya Roy
+                      <br />
+                      <em>IEEE WoWMoM</em>, 2026
+                      <br />
+                      <a href="https://arxiv.org/pdf/2603.10436">paper</a>
+                      <p></p>
+                      <p>
+                        Large deep neural networks (DNNs), especially
+transformer-based and multimodal architectures, are computationally demanding and challenging to deploy on resourceconstrained edge platforms like field robots. These challenges
+intensify in mission-critical scenarios (e.g., disaster response),
+where robots must collaborate under tight constraints on
+bandwidth, latency, and battery life, often without infrastructure or server support. To address these limitations, we
+present COHORT, a collaborative DNN inference and taskexecution framework for multi-robot systems built on the
+Robotic Operating System (ROS). COHORT employs a hybrid
+offline–online reinforcement learning (RL) strategy to dynamically schedule and distribute DNN module execution across
+robots. Our key contributions are threefold: (a) Offline RL policy learning combined with Advantage-Weighted Regression
+(AWR), trained on auction-based task allocation data from
+heterogeneous DNN workloads across distributed robots, (b)
+Online policy adaptation via Multi-Agent PPO (MAPPO), initialized from the offline policy and fine-tuned in real time, and
+(c) comprehensive evaluation of COHORT on vision-language
+model (VLM) inference tasks such as CLIP and SAM, analyzing scalability with increasing robot/workload and robustness
+under . We benchmark COHORT against genetic algorithms
+and multiple RL baselines. Experimental results demonstrate
+that COHORT reduces battery consumption by 15.4%, and
+increases GPU utilization by 51.67%, while satisfying framerate and deadline constraints 2.55x of the time.
+                      </p>
+                      <br />
+                    </td>
+                  </tr>
+
+
+
+
+                  
                   <tr onmouseout="malle_stop()" onmouseover="malle_start()">
                     <td
                       style="padding: 20px; width: 25%; vertical-align: middle"
