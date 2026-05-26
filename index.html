@@ -570,6 +570,89 @@
               >
                 <tbody>
 
+                  <tr class="paper-pink"  onmouseout="malle_stop()" onmouseover="malle_start()">
+                    <td
+                      style="padding: 20px; width: 25%; vertical-align: middle"
+                    >
+                      <div class="one">
+                        <div class="two" id="autoeval-image">
+                          <img
+                            src="images/CALIBRA.png"
+                            width="160"
+                            height="160"
+                          />
+                        </div>
+                        <img
+                          src="images/CALIBRA.png"
+                          width="160"
+                          height="160"
+                        />
+                      </div>
+                      <script type="text/javascript">
+                        function malle_start() {
+                          document.getElementById(
+                            "multiprompt-image"
+                          ).style.opacity = "1";
+                        }
+
+                        function malle_stop() {
+                          document.getElementById(
+                            "multiprompt-image"
+                          ).style.opacity = "0";
+                        }
+                        malle_stop();
+                      </script>
+                    </td>
+                    <td
+                      style="padding: 20px; width: 75%; vertical-align: middle"
+                    >
+                        <papertitle
+                          >CALIBRA: Calibration-Aware Multi-Agent Verification for Contactless Physiological Monitoring</papertitle
+                        >
+                      </a>
+                      <br />
+                      Shadman Sakib, <strong>Gaurav Shinde</strong>,
+                      Nirmalya Roy
+                      <br />
+                      <em>IEEE PerCom</em>, 2026
+                      <br />
+                      <a href="">paper</a>
+                      <p></p>
+                      <p>
+                        Contactless physiological monitoring offers a promising
+path toward low-burden health sensing, but reliable infer-
+ence from short video segments remains difficult when vi-
+sual evidence is weak, corrupted by motion, or spectrally
+ambiguous. We present CALIBRA, a calibration-aware
+multi-agent framework for contactless respiratory rate (RR)
+estimation that treats prediction as an evidence-grounded
+verification problem rather than a one-shot prompting task.
+The framework operates on a structured artifact bundle
+with lightweight signal-derived candidate rates, and per-
+forms routing, specialized vision-language evidence analy-
+sis, critic-based consistency checking, targeted repair, and
+calibrated arbitration with optional abstention. On our in-
+house benchmark, it consistently outperforms prompting-
+only baselines across multiple backbones. With Gemini-2.5-
+Flash, it reduces mean absolute error (MAE) from 5.21 to
+3.42, corresponding to a 34.4% reduction over zero-shot
+prompting and a 16.8% reduction over chain-of-thought
+prompting. With GPT-4o, it reduces MAE from 5.48 to 3.78,
+a 31.0% reduction over zero-shot prompting. It also im-
+proves grounding and consistency in judge-based evalua-
+tion, indicating better evidence alignment beyond numeri-
+cal accuracy alone. Under resource constraints, a routed
+configuration maintains 93% coverage at 4.1 s average la-
+tency and 1.6 GB peak memory. These results show that
+robust contactless physiological inference depends not only
+on stronger multimodal backbones, but also on explicit ver-
+ification of whether predictions are supported by the avail-
+able evidence.
+                      </p>
+                      <br />
+                    </td>
+                  </tr>
+
                   <tr  onmouseout="malle_stop()" onmouseover="malle_start()">
                     <td
                       style="padding: 20px; width: 25%; vertical-align: middle"
