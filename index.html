@@ -570,6 +570,88 @@
               >
                 <tbody>
 
+                  <tr  onmouseout="malle_stop()" onmouseover="malle_start()">
+                    <td
+                      style="padding: 20px; width: 25%; vertical-align: middle"
+                    >
+                      <div class="one">
+                        <div class="two" id="autoeval-image">
+                          <img
+                            src="images/VLS-RR.png"
+                            width="160"
+                            height="160"
+                          />
+                        </div>
+                        <img
+                          src="images/VLS-RR.png"
+                          width="160"
+                          height="160"
+                        />
+                      </div>
+                      <script type="text/javascript">
+                        function malle_start() {
+                          document.getElementById(
+                            "multiprompt-image"
+                          ).style.opacity = "1";
+                        }
+
+                        function malle_stop() {
+                          document.getElementById(
+                            "multiprompt-image"
+                          ).style.opacity = "0";
+                        }
+                        malle_stop();
+                      </script>
+                    </td>
+                    <td
+                      style="padding: 20px; width: 75%; vertical-align: middle"
+                    >
+                        <papertitle
+                          >Decoupling Perception and Reasoning for
+Contactless Respiratory Rate with Vision Language
+and Small Language Models</papertitle
+                        >
+                      </a>
+                      <br />
+                      Shadman Sakib, <strong>Gaurav Shinde</strong>,
+                       Nirmalya Roy
+                      <br />
+                      <em>IEEE/ACM CHASE</em>, 2026
+                      <br />
+                      <a href="">paper</a>
+                      <p></p>
+                      <p>
+                        Contactless respiratory monitoring from video is a
+promising alternative to wearable sensors but remains sensitive
+to motion artifacts and variations in viewpoint and lighting,
+which degrade the reliability of respiratory rate (RR) estimates.
+Traditional signal processing methods often struggle to separate
+physiological motion from visual artifacts, while large multimodal models (LMMs) can reason about these artifacts but are
+often too computationally demanding for privacy-sensitive or
+embedded deployments. This work aims to improve robustness
+and deployability by explicitly decoupling visual perception from
+downstream reasoning. We propose VLS-RR (Visual–Language–
+SLM Respiratory Rate) auditor, a three-stage framework where
+video segments are converted into fused motion signals and
+summary plots. A vision–language model (VLM) then produces a
+textual description of rhythm, breath count, and artifacts. Finally,
+small language models (SLMs) perform chain-of-thought (CoT)
+auditing over this evidence and the signal-derived RR candidates.
+We evaluate VLS-RR on a 50-video belt-synchronized dataset
+spanning diverse breathing patterns, viewpoints, and lighting
+conditions. Compared with signal-only baselines, VLS-RR reduces segment-level MAE by ≈ 30% and improves R
+2
+from 0.85
+to 0.92. It also outperforms numeric-only SLM baselines with an
+additional ≈ 25% MAE reduction. Finally, on an embedded edge
+device, compact SLM auditors run with 0.82–1.71 s latency per
+6 s window, indicating that decoupling perception and reasoning
+enables accurate, resource-efficient RR estimation from video.
+                      </p>
+                      <br />
+                    </td>
+                  </tr>
+
                   <tr class="paper-pink"  onmouseout="malle_stop()" onmouseover="malle_start()">
                     <td
                       style="padding: 20px; width: 25%; vertical-align: middle"
@@ -618,7 +700,7 @@
                       <br />
                       <em>IEEE PerCom</em>, 2026
                       <br />
-                      <a href="https://drive.google.com/file/d/1obSFIfHWuCGQIBqQ90473JyKO-b7WW9Y/view?usp=sharing">paper</a>
+                      <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11524552">paper</a>
                       <p></p>
                       <p>
                         Federated Learning (FL) enables collaborative machine learning across decentralized devices and data sources,
@@ -638,14 +720,7 @@ filters on the client side. An adaptive weight scaling mechanism
 is then applied to amplify critical information for low-accuracy
 classes before aggregation. At the server, a complementary novel
 aggregation strategy mitigates global imbalance across clients,
-ensuring that underperforming classes receive proportional attention during model updates. We theoretically establish that
-Fed-CASQ achieves a convergence rate of O
-
-κ ∗σˆ ∗δˆ √
-T
-
-under
-non-convex settings. We empirically establish that quantization
+ensuring that underperforming classes receive proportional attention during model updates. We empirically establish that quantization
 directly influences the performance of under sampled (minority)
 classes. Experimental results further show that Fed-CASQ substantially narrows the performance gap for low-accuracy classes,
 improving their accuracy by ≈30%, while reducing training
