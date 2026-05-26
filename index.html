@@ -570,6 +570,91 @@
               >
                 <tbody>
 
+                  <tr class="paper-pink"  onmouseout="malle_stop()" onmouseover="malle_start()">
+                    <td
+                      style="padding: 20px; width: 25%; vertical-align: middle"
+                    >
+                      <div class="one">
+                        <div class="two" id="autoeval-image">
+                          <img
+                            src="images/Fed-CASQ.png"
+                            width="160"
+                            height="160"
+                          />
+                        </div>
+                        <img
+                          src="images/Fed-CASQ.png"
+                          width="160"
+                          height="160"
+                        />
+                      </div>
+                      <script type="text/javascript">
+                        function malle_start() {
+                          document.getElementById(
+                            "multiprompt-image"
+                          ).style.opacity = "1";
+                        }
+
+                        function malle_stop() {
+                          document.getElementById(
+                            "multiprompt-image"
+                          ).style.opacity = "0";
+                        }
+                        malle_stop();
+                      </script>
+                    </td>
+                    <td
+                      style="padding: 20px; width: 75%; vertical-align: middle"
+                    >
+                        <papertitle
+                          >Fed-CASQ: Enhancing Class-Wise Accuracy in
+                          Pervasive Federated Learning with Class-Aware
+                          Scaling and Quantization</papertitle
+                        >
+                      </a>
+                      <br />
+                      Emon Dey, Anuradha Ravi, <strong>Gaurav Shinde</strong>,
+                      Garvit Chugh, Indrajeet Ghosh, Archan Misra, Nirmalya Roy
+                      <br />
+                      <em>IEEE PerCom</em>, 2026
+                      <br />
+                      <a href="https://drive.google.com/file/d/1obSFIfHWuCGQIBqQ90473JyKO-b7WW9Y/view?usp=sharing">paper</a>
+                      <p></p>
+                      <p>
+                        Federated Learning (FL) enables collaborative machine learning across decentralized devices and data sources,
+but resource constraints on pervasive devices necessitate efficient
+model compression. Existing approaches, such as quantization for
+on-device training, often degrade accuracy, especially for classes
+that are difficult to learn due to imbalance, poor-quality samples,
+or inherent complexity. This results in persistent accuracy gaps
+across classes. We propose Fed-CASQ’s a novel framework that
+couples class-aware strategies into the quantization process to
+jointly improve efficiency and accuracy in pervasive FL. Unlike
+prior works that address quantization and imbalance separately,
+Fed-CASQ adaptively selects quantization levels based on device
+resources and leverages Layer-wise Relevance Propagation (LRP)
+to assess class-relevant convolutional neural network (CNN)
+filters on the client side. An adaptive weight scaling mechanism
+is then applied to amplify critical information for low-accuracy
+classes before aggregation. At the server, a complementary novel
+aggregation strategy mitigates global imbalance across clients,
+ensuring that underperforming classes receive proportional attention during model updates. We theoretically establish that
+Fed-CASQ achieves a convergence rate of O
+
+κ ∗σˆ ∗δˆ √
+T
+
+under
+non-convex settings. We empirically establish that quantization
+directly influences the performance of under sampled (minority)
+classes. Experimental results further show that Fed-CASQ substantially narrows the performance gap for low-accuracy classes,
+improving their accuracy by ≈30%, while reducing training
+latency by over 56% on resource-constrained pervasive devices.
+                      </p>
+                      <br />
+                    </td>
+                  </tr>
+
 
                   <tr  onmouseout="malle_stop()" onmouseover="malle_start()">
                     <td
