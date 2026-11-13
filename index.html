@@ -191,7 +191,23 @@
     <p class="authors">Shadman Sakib, <strong class="me">Gaurav Shinde</strong>, Nirmalya Roy</p>
     <p class="tldr">Specialized VLM agents analyze evidence, a critic checks consistency, and an arbiter makes a calibrated respiratory-rate decision.</p>
     <div class="links"><a class="btn" href="https://sakibshadman.github.io/CALIBRA-project-page/" target="_blank" rel="noopener">🌐 Project</a><a class="btn" href="https://openaccess.thecvf.com/content/CVPR2026W/GRAIL-V/papers/Sakib_CALIBRA_Calibration-Aware_Multi-Agent_Verification_for_Contactless_Physiological_Monitoring_CVPRW_2026_paper.pdf" target="_blank" rel="noopener">📄 Paper</a><button class="btn" data-toggle="abs-calibra" aria-expanded="false">📝 Abstract</button></div>
-    <div class="abstract" id="abs-calibra" hidden><p>Contactless physiological monitoring offers a promising path toward low-burden health sensing, but reliable inference from short video segments remains difficult when visual evidence is weak, corrupted by motion, or spectrally ambiguous. We present CALIBRA, a calibration-aware multi-agent framework for contactless respiratory rate (RR) estimation that treats prediction as an evidence-grounded verification problem rather than a one-shot prompting task. The framework operates on a structured artifact bundle with lightweight signal-derived candidate rates, and performs routing, specialized vision-language evidence analysis, critic-based consistency checking, targeted repair, and calibrated arbitration with optional abstention. On our inhouse benchmark, it consistently outperforms promptingonly baselines across multiple backbones. With Gemini-2.5Flash, it reduces mean absolute error (MAE) from 5.21 to 3.42, corresponding to a 34.4% reduction over zero-shot prompting and a 16.8% reduction over chain-of-thought prompting. With GPT-4o, it reduces MAE from 5.48 to 3.78, a 31.0% reduction over zero-shot prompting. It also improves grounding and consistency in judge-based evaluation, indicating better evidence alignment beyond numerical accuracy alone. Under resource constraints, a routed configuration maintains 93% coverage at 4.1 s average latency and 1.6 GB peak memory. These results show that robust contactless physiological inference depends not only on stronger multimodal backbones, but also on explicit verification of whether predictions are supported by the available evidence. Code and project materials are available at https://sakibshadman.github.io/CALIBRA-project-page/.</p></div>
+    <div class="abstract" id="abs-calibra" hidden><p>Contactless physiological monitoring offers a promising
+path toward low-burden health sensing, but reliable inference from short video segments remains difficult when visual evidence is weak, corrupted by motion, or spectrally
+ambiguous. We present CALIBRA, a calibration-aware
+multi-agent framework for contactless respiratory rate (RR)
+estimation that treats prediction as an evidence-grounded
+verification problem rather than a one-shot prompting task.
+The framework operates on a structured artifact bundle
+with lightweight signal-derived candidate rates, and performs routing, specialized vision-language evidence analysis, critic-based consistency checking, targeted repair, and
+calibrated arbitration with optional abstention. On our inhouse benchmark, it consistently outperforms promptingonly baselines across multiple backbones. With Gemini-2.5-
+Flash, it reduces mean absolute error (MAE) from 5.21 to
+3.42, corresponding to a 34.4% reduction over zero-shot
+prompting and a 16.8% reduction over chain-of-thought
+prompting. With GPT-4o, it reduces MAE from 5.48 to 3.78,
+a 31.0% reduction over zero-shot prompting. It also improves grounding and consistency in judge-based evaluation, indicating better evidence alignment beyond numerical accuracy alone. Under resource constraints, a routed
+configuration maintains 93% coverage at 4.1 s average latency and 1.6 GB peak memory. These results show that
+robust contactless physiological inference depends not only
+on stronger multimodal backbones, but also on explicit verification of whether predictions are supported by the available evidence</p></div>
   </div>
 </li><li class="pub" data-cats="vlm health">
   <button class="thumb" data-full="assets/img/papers/vlsrr.webp" data-caption="Decoupling Perception and Reasoning for Contactless Respiratory Rate with Vision Language and Small Language Models" aria-label="Enlarge figure"><img src="assets/img/papers/vlsrr_thumb.webp" alt="Decoupling Perception and Reasoning for Contactless Respiratory Rate with Vision Language and Small Language Models architecture" width="600" height="231"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></button>
